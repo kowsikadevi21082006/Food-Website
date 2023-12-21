@@ -3,7 +3,7 @@ document.getElementById("button").addEventListener('click', () => {
     let mealName = document.getElementById('inputName').value 
     let details = document.getElementById("details");
     details.innerHTML = "";
-
+//   Using API all meal items is display in the code
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
         .then(response => response.json())
         .then(data => {
@@ -36,7 +36,7 @@ document.getElementById("button").addEventListener('click', () => {
             console.error(`Error: ${error.message}`);
         });
 });
-
+// All meals datails codes is there
 function details(id) {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then(res => res.json())
