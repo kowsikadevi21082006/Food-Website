@@ -72,3 +72,51 @@ function details(id) {
             console.error(`Error: ${error.message}`);
         });
 }
+
+//  This code block waits for the DOM to be fully loaded and then calls the getRandomMeals function
+document.addEventListener("DOMContentLoaded", () => {
+    getRandomMeals();
+  });
+  const randomMealsContainer = document.getElementById("random-meals-container");
+  // Fetches random meals from the API and displays them
+  function getRandomMeals() {
+    fetchMeals("https://www.themealdb.com/api/json/v1/1/random.php")
+      .then((data) => {
+        const randomMeals = data.meals.slice(0);
+        displayRandomMeals(randomMeals, "random-meals-container");
+      })
+      .catch((error) => console.error("Error fetching random meals:", error));
+  }
+  //function to display random meal
+  function displayRandomMeals(meals, containerId) {
+    const mealsContainer = document.getElementById(containerId);
+    mealsContainer.innerHTML = "";
+  
+    meals.forEach((meal) => {
+      const mealDiv = document.createElement("div");
+      mealDiv.classList.add("meal");
+      mealDiv.innerHTML = `
+              <h2>${meal.strMeal}</h2>
+              <img class="image" src="${meal.strMealThumb}" alt="${meal.strMeal}">
+              <p>${meal.strInstructions}</p>
+          `;
+  
+      mealsContainer.appendChild(mealDiv);
+    });
+  }
+  // Fetch meals from the API
+  function fetchMeals(url) {
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => {
+        console.error("Error fetching meals:", error);
+        throw error;
+      });
+  }
+
+
+
+
+
+
+

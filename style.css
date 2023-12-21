@@ -40,11 +40,11 @@ body{
     position: relative;
     left: 120px;
 }
-h2{
+.head{
     color: #fff;
     position: absolute;
     top: 230px;
-    right: 30px;
+    left: 620px;
     font-size: 1.2rem;
 }
 h3{
@@ -63,7 +63,7 @@ h3{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 1340px;
+    top: 1720px;
     left: 10px;
     flex-wrap: wrap;
 }
@@ -74,7 +74,7 @@ h3{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 800px;
+    top: 1200px;
     left: 450px;
     height: 0px;
     flex-wrap: wrap;
@@ -83,72 +83,37 @@ h3{
     font-size: 1rem;
     position: absolute;
     top: 470px;
-    left: 40px;
+    left: 70px;
 }
-#name1{
-    font-size: 1rem;
-    position: absolute;
-    top: 220px;
-    left: 200px;
-}
-#name2{
-    font-size: 1rem;
-    position: absolute;
-    top: 220px;
-    left: 370px;
-}
-#name3{
-    font-size: 1rem;
-    position: absolute;
-    top: 220px;
-    left: 570px;
-}
-#name4{
-    font-size: 1rem;
-    position: absolute;
-    top: 220px;
-    left: 770px;
-}
-
 .random{
     color: #fff;
     position: absolute;
     left: 100px;
     top: 520px;
 }
-#pic1{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 150px;
-    top: 60px;
-    border-radius: 25px;
+h2{
+    position: relative;
+    top: 270px;
+    left: 340px;
+    font-size: 1.5rem;
 }
-#pic2{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 330px;
-    top: 60px;
-    border-radius: 25px;
+p{
+    position: relative;
+    top: 40px;
+    right: 40px;
 }
-#pic3{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 520px;
-    top: 60px;
-    border-radius: 25px;
+#random-meals-container{
+     position: relative;
+     top: 10px;
 }
-#pic4{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 700px;
-    top: 60px;
-    border-radius: 25px;
+.image{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 300px;
+    bottom: 40px;
+    border-radius: 20px;
 }
- 
 @media only screen and (max-width: 580px){
     #picture{
         width: 180px;
@@ -163,95 +128,53 @@ h3{
         left: 15px;
         top: 10px;
     }
-    h2{
-        color: #fff;
-        position: absolute;
-        top: 205px;
-        right: 10px;
-        font-size: 0.8rem;
-    }
     h4{
         width: 200px;
         position: absolute;
-        bottom: 20px;
-        left: 10px;
+        bottom: 1010px;
+        right: 245px;
     }
-    #pic1{
-        width: 80px;
-        height: 80px;
+    .head{
+        color: #fff;
         position: absolute;
-        left: 0px;
-        bottom: 16rem;
-        border-radius: 25px;
+        top: 230px;
+        left: 240px;
+        font-size: 0.7rem;
     }
-    #pic2{
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        left: 100px;
-        top: 60px;
-        border-radius: 25px;
+    h2{
+        position: relative;
+        top: 220px;
+        left: 60px;
+        font-size: 1.2rem;
     }
-    #pic3{
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        left: 200px;
-        top: 60px;
-        border-radius: 25px;
+    p{
+        position: relative;
+        top: 50px;
+        right: 40px;
     }
-    #pic4{
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        left: 300px;
-        top: 60px;
-        border-radius: 25px;
+    .image{
+        width: 180px;
+        height: 180px;
+        position: relative;
+        left: 40px;
+        bottom: 10px;
+        border-radius: 20px;
     }
     #details{
         justify-content: center;
         position: absolute;
-        top: 700px;
-        left: 180px;
+        top: 1630px;
+        left: 120px;
         flex-wrap: wrap;
     }
     #items{
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 1240px;
+        top: 2140px;
         left: 10px;
         flex-wrap: wrap;
     }
-    #name1{
-        width: 200px;
-        font-size: 1rem;
-        position: absolute;
-        top: 4px;
-        left: 1px;
-    }
-    #name2{
-        width: 200px;
-        font-size: 1rem;
-        position: absolute;
-        top: 4px;
-        left: 100px;
-    }
-    #name3{
-        width: 200px;
-        font-size: 1rem;
-        position: absolute;
-        top: 4px;
-        left: 220px;
-    }
-    #name4{
-        width: 200px;
-        font-size: 1rem;
-        position: absolute;
-        top: 4px;
-        left: 300px;
-    }
-    
     .random{
         color: #fff;
         position: absolute;
