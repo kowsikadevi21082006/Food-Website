@@ -1,3 +1,4 @@
+/* Body */
 body{
     background-color: #001e4d;
     background-size: cover;
@@ -7,7 +8,7 @@ body{
     padding-bottom: 20px;
     min-height: 100vh;
 }
-
+/* headers section */
 .headName{
     color: #fff;
     text-align: center;
@@ -19,6 +20,7 @@ body{
     padding-top: 10px;
     font-size: 1.2rem;
 }
+/* paragraph */
 .p{
     color: #fff;
     text-align: center;
@@ -33,6 +35,7 @@ body{
     bottom: 555px;
     border-radius: 100px;
 }
+/* pictures section */
 #picture{
     width: 370px;
     height: 250px;
@@ -53,12 +56,14 @@ h3{
     top: 560px;
     font-size: 1.4rem;
 }
+/* message section */
 #msg{
     text-align: center;
     color: #fff;
     display: none;
     margin-bottom: 20px;
 }
+/* food items section */
 #items{
     display: flex;
     justify-content: center;
@@ -70,12 +75,13 @@ h3{
 .singleItem{
     cursor: pointer;
 }
+/* food details section */
 #details{
     display: flex;
     justify-content: center;
     position: absolute;
     top: 1200px;
-    left: 450px;
+    left: 420px;
     height: 0px;
     flex-wrap: wrap;
 }
@@ -95,13 +101,14 @@ h2{
     position: relative;
     top: 270px;
     left: 340px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 p{
     position: relative;
     top: 40px;
     right: 40px;
 }
+/* random meals section */
 #random-meals-container{
      position: relative;
      top: 10px;
@@ -114,6 +121,8 @@ p{
     bottom: 40px;
     border-radius: 20px;
 }
+/* Media queries */
+/* Mobile Responsive all the website in the code */
 @media only screen and (max-width: 580px){
     #picture{
         width: 180px;
@@ -128,12 +137,7 @@ p{
         left: 15px;
         top: 10px;
     }
-    h4{
-        width: 200px;
-        position: absolute;
-        bottom: 1010px;
-        right: 245px;
-    }
+    /* header section */
     .head{
         color: #fff;
         position: absolute;
@@ -145,13 +149,14 @@ p{
         position: relative;
         top: 220px;
         left: 60px;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     p{
         position: relative;
         top: 50px;
         right: 40px;
     }
+    /* images */
     .image{
         width: 180px;
         height: 180px;
@@ -160,6 +165,7 @@ p{
         bottom: 10px;
         border-radius: 20px;
     }
+    /* Details section */
     #details{
         justify-content: center;
         position: absolute;
@@ -175,6 +181,7 @@ p{
         left: 10px;
         flex-wrap: wrap;
     }
+    /* random meals section */
     .random{
         color: #fff;
         position: absolute;
